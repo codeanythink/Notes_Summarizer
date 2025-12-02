@@ -39,10 +39,9 @@ def ocr_pdf(input_path: str) -> str:    # if file contains images it converts pd
 
     except ocrmypdf.exceptions.MissingDependencyError:
         error_msg = (
-            "CRITICAL ERROR: Tesseract or Ghostscript is missing.\n"
-            "1. Download Tesseract: https://github.com/UB-Mannheim/tesseract/wiki\n"
-            "2. Download Ghostscript: https://www.ghostscript.com/releases/gsdnld.html\n"
-            "3. Add them to your System PATH."
+            "CRITICAL: OCR tools missing.\n"
+            "If local: Install Tesseract & Ghostscript.\n"
+            "If on Cloud: Ensure 'packages.txt' contains 'tesseract-ocr'."
         )
         logger.error(error_msg)
         raise EnvironmentError(error_msg)
