@@ -1,0 +1,16 @@
+# Ignore Virtual Environment
+myenv/
+venv/
+.idea/
+
+# Ignore Runtime Cache
+__pycache__/
+*.pyc
+cache/
+data/
+
+# Ignore Logs
+logs/
+
+#Ignore Notebooks
+notebooks/
