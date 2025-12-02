@@ -18,7 +18,8 @@ st.set_page_config(
         'Report a bug': "https://github.com/your-repo/issues",
         'About': "### AI Notes Summarizer\nBuilt with Python, Streamlit, and SBERT.\nThis is a project for extracting insights from lecture notes."
     }
-)st.markdown("<style>.stTextArea textarea {font-size: 16px !important;}</style>", unsafe_allow_html=True)
+)
+st.markdown("<style>.stTextArea textarea {font-size: 16px !important;}</style>", unsafe_allow_html=True)
 st.title("📚 AI Lecture Notes Summarizer")
 
 
