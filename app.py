@@ -8,30 +8,10 @@ from pathlib import Path
 
 from src import config, file_loader, ocr_pipeline, summarizer_extractive, utils
 
-st.set_page_config(
-    page_title="AI Notes Summarizer",
-    page_icon="📚",
-    layout="centered",
-    initial_sidebar_state="expanded",
-    menu_items={
-        'Get Help': 'https://www.linkedin.com/in/your-profile',
-        'Report a bug': "https://github.com/your-repo/issues",
-        'About': "### AI Notes Summarizer\nBuilt with Python, Streamlit, and SBERT.\nThis is a project for extracting insights from lecture notes."
-    }
-)
+st.set_page_config(page_title="AI Notes Summarizer", page_icon="📚")    #streamlit page initiation
 st.markdown("<style>.stTextArea textarea {font-size: 16px !important;}</style>", unsafe_allow_html=True)
 st.title("📚 AI Lecture Notes Summarizer")
 
-
-# --- HIDE STREAMLIT STYLE ---
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # This acts as the app's "Long-term Memory"
 if 'source_data' not in st.session_state:
