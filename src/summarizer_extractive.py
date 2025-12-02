@@ -2,8 +2,7 @@ import numpy as np
 import logging
 from sklearn.metrics.pairwise import cosine_similarity
 from . import config, embeddings, preprocess
-import embeddings
-import preprocess
+
 
 logger = logging.getLogger(__name__)   #logging setup
 
