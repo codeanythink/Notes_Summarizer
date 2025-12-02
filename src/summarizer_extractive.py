@@ -1,7 +1,7 @@
 import numpy as np
 import logging
 from sklearn.metrics.pairwise import cosine_similarity
-import config
+from . import config, embeddings, preprocess
 import embeddings
 import preprocess
 

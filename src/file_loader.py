@@ -2,7 +2,7 @@ import os
 import logging
 import pdfplumber
 from pathlib import Path
-import config
+from . import config
 
 
 

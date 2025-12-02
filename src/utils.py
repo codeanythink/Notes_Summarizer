@@ -4,7 +4,7 @@ import hashlib
 import torch
 import logging
 from pathlib import Path
-import config
+from . import config
 
 logger = logging.getLogger(__name__)  #setup logging
 

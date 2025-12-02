@@ -2,7 +2,7 @@ import os
 import logging
 import ocrmypdf
 from pathlib import Path
-import config
+from . import config
 
 logger = logging.getLogger(__name__)   # logging setup
 

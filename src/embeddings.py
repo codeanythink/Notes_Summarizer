@@ -1,8 +1,7 @@
 import logging
 import numpy as np
 from sentence_transformers import SentenceTransformer
-import config
-import utils
+from . import config, utils
 
 
 logger = logging.getLogger(__name__) # Looging setup
