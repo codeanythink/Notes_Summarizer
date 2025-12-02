@@ -14,3 +14,6 @@ logs/
 
 #Ignore Notebooks
 notebooks/
+
+#Ignore Test files
+test/
